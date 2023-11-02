@@ -30,5 +30,4 @@ def undo(data, history):
         del history[-1]
         del history[-1]
     except IndexError:
-        print(history)
-        print("Nothing to undo")
+        print("There is no history for this file yet")

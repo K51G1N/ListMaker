@@ -17,7 +17,11 @@ def load_previous_list():
             filename = input("Enter the name of the file\n")
             if os.path.isfile(filename):
                 data = load(filename)
-                history = load("history_"+filename)
+                if os.path.isfile("history_"+filename):
+                    history = load("history_"+filename)
+                else:
+                    print("The history for this file doesn't exist so there won't be any undo functionality")
+                    history = []
                 choice = 'n'
             else:
                 print("That file does not exist")
