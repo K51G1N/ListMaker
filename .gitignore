@@ -1,0 +1,10 @@
+.DS_Store
+.venv/
+MovieNight
+history_*
+*txt
+logic/__init__.py
+logic/__pycache__/
+logic/save.py
+src/__init__.py
+src/__pycache__/
